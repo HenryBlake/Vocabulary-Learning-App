@@ -14,9 +14,9 @@ import androidx.compose.ui.unit.dp
 import com.henry_w_blake.gottouch.R
 
 @Composable
-fun BackgroundImg(){
+fun BackgroundImg(modifier: Modifier=Modifier){
     //Background Box
-    Box(modifier = Modifier.fillMaxSize().background(color = Color.White)){
+    Box(modifier = modifier.fillMaxSize().background(color = Color.White)){
         //Upper-left circles
         Image(
             painter = painterResource(R.drawable.circles),
